@@ -71,7 +71,7 @@ while True:
     UPSCapacity = 100
 
  if readCapacity(bus) < 20:
-    # print("Battery LOW")
+    print("Battery LOW")
  # print("******************")
 
  skData1 = '{"updates": [{ "values": [{"path": "enviroment.rpi.ups.voltage","value": "' + str(readVoltage(bus)) +'"}]}]}'
@@ -79,6 +79,9 @@ while True:
  serial_dict = json.loads(skData1.encode('ascii', 'strict'))
  sys.stdout.write(json.dumps(serial_dict))
  sys.stdout.write('\n')
+ sys.stdout.flush()
+ time.sleep(2)
+
  serial_dict = json.loads(skData2.encode('ascii', 'strict'))
  sys.stdout.write(json.dumps(serial_dict))
  sys.stdout.write('\n')
