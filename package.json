@@ -1,0 +1,11 @@
+{
+  "name": "sk-plugin-x728UPS",
+  "version": "0.0.1",
+  "description": "Signal K Node server plugin for the x7289 UPS Hat",
+  "main": "index.js",
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "Chuck bowers <cjbacts2024@gmail.com>",
+  "license": "Apache-2.0"
+}
